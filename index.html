@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#141C29">
+  <meta name="description" content="Добровольная поддержка проекта «Вопросы знатокам»: по подписке на Patreon или без подписки через Buy Me a Coffee.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Вопросы знатокам — поддержать проект">
+  <meta property="og:description" content="Все выпуски бесплатны. Вы можете поддержать развитие проекта и сообщества любителей интеллектуальных игр.">
+  <meta property="og:url" content="https://voprosy-znatokam.github.io/">
+  <link rel="canonical" href="https://voprosy-znatokam.github.io/">
+  <title>Поддержать проект — Вопросы знатокам</title>
+  <link rel="icon" type="image/webp" href="assets/owl-logo-header.webp">
+  <style>
+    :root {
+      --bg: #141C29;
+      --panel: #1C2736;
+      --panel-hover: #233247;
+      --text: #F4F1E9;
+      --muted: #B0B9C6;
+      --gold: #D9B56F;
+      --border: #425065;
+      --focus: #FFFFFF;
+      color-scheme: dark;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { background: var(--bg); }
+    body {
+      min-height: 100dvh;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    .shell {
+      width: min(100% - 40px, 640px);
+      min-height: 100dvh;
+      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-block: 52px 32px;
+    }
+    .brand { display: flex; align-items: center; gap: 18px; }
+    .brand-logo { display: block; width: 92px; height: 92px; object-fit: contain; flex: 0 0 92px; }
+    .eyebrow {
+      margin: 0;
+      color: var(--gold);
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 650;
+    }
+    .accent {
+      width: 56px;
+      height: 2px;
+      background: var(--gold);
+      border-radius: 9px;
+      margin: 25px 0 28px;
+    }
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(32px, 7vw, 48px);
+      line-height: 1.13;
+      font-weight: 650;
+      letter-spacing: -.035em;
+    }
+    .intro { margin: 0; max-width: 570px; font-size: 17px; color: var(--muted); }
+    .intro strong { color: var(--text); font-weight: 600; }
+    .choices { margin-top: 38px; display: grid; gap: 16px; }
+    .choice {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 23px 25px 24px;
+      background: var(--panel);
+    }
+    .choice-label {
+      margin: 0 0 6px;
+      color: var(--gold);
+      font-size: 13px;
+      letter-spacing: .045em;
+      font-weight: 650;
+      text-transform: uppercase;
+    }
+    h2 { margin: 0 0 9px; line-height: 1.25; font-size: 22px; font-weight: 630; }
+    .choice-description { margin: 0; color: var(--muted); font-size: 15px; }
+    .support-link {
+      width: 100%;
+      min-height: 48px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      margin-top: 20px;
+      padding: 11px 20px;
+      background: var(--gold);
+      color: var(--bg);
+      font-size: 16px;
+      line-height: 1.3;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: center;
+      transition: background 140ms ease, transform 140ms ease;
+    }
+    .support-link:hover { background: #EAD09A; transform: translateY(-1px); }
+    .support-link:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+    .support-link .arrow { font-size: 19px; font-weight: 400; line-height: 1; }
+    .secondary { background: transparent; color: var(--gold); }
+    .secondary:hover { background: var(--panel-hover); }
+    .notice { margin: 28px 0 0; color: var(--muted); font-size: 13px; }
+    footer { margin-top: 48px; color: var(--muted); font-size: 12px; }
+    @media (max-width: 520px) {
+      .shell { justify-content: flex-start; padding-block: 54px 28px; }
+      .brand { gap: 14px; }
+      .brand-logo { width: 76px; height: 76px; flex-basis: 76px; }
+      .intro { font-size: 16px; }
+      .choice { padding: 21px 19px 22px; }
+      h2 { font-size: 21px; }
+      .choices { margin-top: 32px; }
+      footer { margin-top: 40px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .support-link { transition: none; }
+      .support-link:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <main>
+      <div class="brand">
+        <img class="brand-logo" src="assets/owl-logo-header.webp" width="192" height="192" alt="Сова в золотом круге — логотип «Вопросы знатокам»">
+        <p class="eyebrow">Вопросы знатокам</p>
+      </div>
+      <div class="accent" aria-hidden="true"></div>
+      <h1>Поддержать проект</h1>
+      <p class="intro">«Вопросы знатокам» — проект для любителей интеллектуальных игр. Наши видео остаются <strong>бесплатными и общедоступными</strong>. Если вам нравится то, что мы делаем, вы можете добровольно поддержать новые выпуски и развитие сообщества.</p>
+
+      <section class="choices" aria-label="Способы поддержки">
+        <article class="choice">
+          <p class="choice-label">Patreon</p>
+          <h2>Регулярная поддержка</h2>
+          <p class="choice-description">Вы можете оформить регулярную поддержку проекта и одновременно указать, какое направление его развития считаете наиболее важным. При желании сумму поддержки можно изменить, а подписку — отменить в любое время.</p>
+          <a class="support-link" href="https://www.patreon.com/voprosy_znatokam/membership?l=ru-ru" target="_blank" rel="noopener noreferrer" aria-label="Перейти на Patreon для регулярной поддержки (новая вкладка)">
+            Поддержать на Patreon <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="choice">
+          <p class="choice-label">Buy Me a Coffee</p>
+          <h2>Поддержка без подписки</h2>
+          <p class="choice-description">Вы можете поддерживать проект в любое время и столько раз, сколько захотите.</p>
+          <a class="support-link secondary" href="https://buymeacoffee.com/voprosy_znatokam" target="_blank" rel="noopener noreferrer" aria-label="Перейти на Buy Me a Coffee для поддержки без подписки (новая вкладка)">
+            Поддержать на Buy Me a Coffee <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </article>
+      </section>
+
+      <p class="notice">Поддержка полностью добровольна и не предполагает дополнительных привилегий или закрытых материалов.</p>
+    </main>
+    <footer>«Вопросы знатокам» · Интеллектуальные игры для всех</footer>
+  </div>
+</body>
+</html>
